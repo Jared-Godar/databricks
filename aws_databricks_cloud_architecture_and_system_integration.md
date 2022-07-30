@@ -52,4 +52,39 @@
 - Databricks documentation has walkthroughs for every integration
 - Use cluster-mounted IAM roles
 - Mount s3 Bucket
-- 
+- With read only can mount and read, but not change
+  - Usually the right level of permissions for most users
+
+## AWS Integrations
+
+### Streaming with Kinesis
+
+- Subscribe to structured stream
+- Parse JSON
+
+### Redshift
+
+- Install custom jar onto cluser
+- Need drivers from Amazon
+
+## MLFLow / Sagemaker
+
+- [Set up AWS Authenticator for SageMaker](https://docs.databricks.com/administration-guide/cloud-configurations/aws/sagemaker.html)
+- [x] [Pip instal MLflow](https://mlflow.org/docs/latest/quickstart.html#installing-mlflow)
+- [x] [Install  AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [ ] [Configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+- [ ] [Grant User Access to ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
+- [ ] [Build and Push pyfunc Container](https://mlflow.org/docs/latest/cli.html#mlflow-sagemaker-build-and-push-container)
+
+
+- Train and run
+- Model deployed in Docker Image
+- Deploy (~8 min)
+
+## Glue and Athena
+
+- Data catalogue to replace hive metastore
+- Query DeltaLake files with Athena
+- IAM role
+- Spark configuration on cluster
+
