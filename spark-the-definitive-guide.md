@@ -45,4 +45,15 @@
 - Distributed across multiple machines
   - Too large to fit on one
   - Take too long to perform computations on one machine
-  - 
+
+## Partitions
+
+- To allow every executor to perform work in parallel, Spark breaks up data into chunks called *partitions*
+- A partition is a collection of rows that sits on one maching in your cluster
+- Partitions represent how data is physically districuted across clusters of machines during execution
+
+## Transformations
+
+- In spark, the core data structures are *immutable*
+- In order to modify, *transformations* must be performed
+- 
