@@ -56,4 +56,3 @@
 
 - In spark, the core data structures are *immutable*
 - In order to modify, *transformations* must be performed
-- 
